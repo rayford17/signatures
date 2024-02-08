@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RQ+ Signatures</title>
+    <style>
+      * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-table {
+    vertical-align: baseline middle;
+    font-size: medium;
+}
+
+.contact-table {
+    display: flex;
+}
+
+.logo-table {
+    vertical-align: baseline middle;
+    font-size: medium;
+}
+
+.cell-1__logo {
+    width: 120px; 
+    vertical-align: middle;
+    padding-right: 0px;
+}
+
+.image-container {
+    margin-right: 20px;
+    display: block;
+}
+
+.logo-image { 
+    max-width: 100%;
+}
+
+.cell-2__name {
+    max-width: 150px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    vertical-align: middle;
+    font-size: 1.6rem;
+}
+
+
+h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #3D464F;
+}
+
+
+p {
+    margin: 0px;
+    color:#3D464F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.cell-3__space1 {
+    width: 30px;
+}
+
+div {
+    width: 30px;
+}
+
+.cell-4__linebreak {
+    color: #EA8830;
+    width: 1px;
+    border-bottom: none;
+    border-left: 1px solid;
+}
+
+.contact-table {
+    font-size: medium;
+    width: 50px;
+    white-space: nowrap;
+}
+
+.phone-image {
+   color: #EA8830;
+   width: 13;
+   display: block;
+   background-color: #EA8830; 
+}
+
+.cell-6__phonenumber { 
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.phone-hyperlink { 
+    color: #3D464F;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.email-icon__container {
+    width: 4px;
+    display: block;
+    padding-top: 2px;
+}
+
+.email-image {
+    color: #EA8830;
+    width: 13;
+    display: block;
+    background-color: #EA8830;
+}
+
+.cell-7__hyperlink { 
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.email-hyperlink { 
+    display: inline-block;
+    color: #3D464F;
+    text-decoration: none;
+    font-size: 13px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.weblink-image {
+    color:#EA8830;
+    width: 13px;
+    display: block;
+    background-color: #EA8830;
+}
+
+.cell-8__hyperlink {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    display: inline-block;
+}
+
+.weblink-hyperlink {
+    color: #3D464F;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.zoomlink-hyperlink {
+    color: #505C67;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.zoom-image {
+    color: #EA8830;
+    width: 13px;
+    display: block;
+}
+
+.cell-9__zoomlink{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.footer-main {
+    border: none;
+    margin-top: 20px;
+}
+
+.footer-line {
+    width: 475px;
+    border-top: solid #EA8830 2px;
+}
+
+.footer-main tr {
+    height: 30;
+    background-color: #3D464F;
+}
+
+.footer-text {
+    padding: 8px 0px 8px 8px;
+    text-align: left;
+}
+
+.footerr {
+    color: rgb(242,242,242);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: thin;
+}
+
+@media (max-width: 620px) {
+    .cell-1__logo, .cell-2__name {
+        width: 100% !important;
+        display: block;
+        height: 49px;
+    }
+}
+
+@media (max-width:620px){
+     table, thead, tbody, tr, td {
+        display: block;
+    }
+    
+    a {
+        float: left;
+        padding-left: 12px;
+        padding-bottom: 4px; 
+    }
+
+    .weblink-hyperlink {
+        margin-top: 8px;
+    }
+
+    .phone-hyperlink {
+        margin-top: 4px;
+    }
+
+    .zoomlink-hyperlink {
+        margin-bottom: 4px;
+    }
+
+    img, i {
+        float: left;
+    }
+
+    .email-image, .weblink-image, .phone-image, .zoom-image {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 620px) {
+        .cell-3__space1, .cell-3__space2 {
+            margin-top: 0px;
+            width: 4px;
+            height: 0px;
+        }
+    }
+
+@media (max-width: 620px) {
+    .cell-4__linebreak {
+        display: block;
+    }
+}
+
+@media (max-width: 620px) {
+    .cell-5__contact:before {
+        display: block;
+        content: "";
+        width: 40%;
+        border-top: 1px solid #EA8830;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-bottom: 4px;
+        height: 8px;
+    }
+
+    .footer-line {
+        display: none;
+    }
+
+    .footer-main {
+        display: inline-block;
+        content: "";
+        width: 40%;
+        border-top: 1px solid #EA8830;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 620px) {
+    .cell-5__contact:after {
+        display: inline-block !important;
+        width: 100% !important;
+        padding: 20px 5px 20px 5px !important;
+    }
+}
+
+@media (max-width: 620px) {
+    .cell-1__logo {
+      padding-right: 0px;  
+      padding-bottom: 40px;
+      width: 50px;
+      height: 50px;
+    }
+    
+}
+
+@media (max-width: 620px) {
+    .image-container {
+        width: 75px;
+        height: 50px;
+    }
+}
+    </style>
+</head>
+  <body>  
+    <table cellpadding="0" cellspacing="0" class="main-table">
+        <tbody>
+          <tr>
+            <td>
+              <table cellpadding="0" cellspacing="0" class="logo-table">
+                  <tr>
+                    <td class="cell-1__logo" >
+                      <span class="image-container">
+                        <img src="RQ-FIX-min.png" role="RQ logo" class="logo-image">
+                      </span>
+                    </td>
+                    <td class="cell-2__name">
+                      <h3>
+                        <span>Emily</span>
+                        <span>Parkins</span>
+                      </h3>
+                      <p>
+                        <span>Director of Business and Outreach Initiatives</span>
+                      </p>
+                    </td>
+                    <td width="30" class="cell-3__space1">
+                      <div></div>
+                    </td>
+                    <td direction="vertical" class="cell-4__linebreak"></td>
+                    <td class="cell-3__space2" width="30">
+                      <div></div>
+                    </td>
+            <td class="cell-5__contact">
+              <table cellpadding="0" cellspacing="0" class="contact-table">
+                  <tbody class="contact-table__1">
+                    <tr class="phone-row">
+                      <td class="phone-container">
+                        <table cellpadding="0" cellspacing="0" class="phone-table">
+                          <tbody>
+                            <tr>
+                              <td class="phone-icon__container">
+                                <span class="a">
+                                  <img class="phone-image" src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png">
+                                  </span>
+                                      <div width="15"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td class="cell-6__phonenumber">
+                <a href="tel:(267) 718-1535" class="phone-hyperlink">
+                  <span>(267) 718-8535</span>
+                    </a>
+              </td>
+                </tr>
+                      <tr class="email-row">
+                        <td class="email-container">
+                          <table cellpadding="0" cellspacing="0" class="email-table">
+                            <tbody>
+                              <tr>
+                                <td class="email-icon__container">
+                                   <span class="a">
+                                    <img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png" class="email-image">
+                                  </span>
+                                      <div width="15"></div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td class="cell-7__hyperlink">
+                          <a href="mailto:emily@refquest.com" class="email-hyperlink">
+                            <span>emily@refquest.com</span></a>
+                        </td>
+                      </tr>
+                      <tr class="weblink-row">
+                        <td class="cell-8__weblink" width="30" style="vertical-align: middle;">
+                          <table cellpadding="0" cellspacing="0" class="weblink-table">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <span class="a">
+                                    <img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png" class="weblink-image">
+                                    </span>
+                                      <div width="15"></div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td class="cell-8__hyperlink">
+                          <a href="//www.refquest.com" class="weblink-hyperlink">
+                            <span>www.refquest.com</span></a>
+                        </td>
+                      </tr>
+                      <tr class="zoomlink-row">
+                        <td class="cell-9__zoomlink" width="30" style="vertical-align: middle;">
+                          <table cellpadding="0" cellspacing="0" class="zoomlink-table">
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                        </tbody>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+      </table>
+      <table class="footer-main" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td class="footer-line"></td>
+            </tr>
+        <tr>
+          <td class="footer-text">
+            <p class="footerr"><em>END-TO-END OFFICIATING SERVICES</em></p>
+          </td>
+        </tr>
+        </tbody>
+      </table>  
+</body>
+</html>
